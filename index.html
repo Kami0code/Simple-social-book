@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialContact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/725991eeb5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+			<a href="index.html">
+            <img src="img/logo.png" class="logo">
+			</a>
+            <ul>
+                <li><img src="img/notification.png"></li>
+                <li><img src="img/inbox.png"></li>
+                <li><img src="img/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="img/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="img/profile-pic.png">
+            </div>
+
+        </div>
+        <!-- Settings-menu -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="setting-menu-inner">
+                <div class="user-profile">
+                    <img src="img/profile-pic.png">
+                    <div>
+                        <p>Gabriel Salazar</p>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="img/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img class="settings-icon" src="img/setting.png">
+                    <a href="#">Settings & Privacy <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img class="settings-icon" src="img/help.png">
+                    <a href="#">Help & Support <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img class="settings-icon" src="img/display.png">
+                    <a href="#">Display & Accessibility <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img class="settings-icon" src="img/logout.png">
+                    <a href="#">Logout <img src="img/arrow.png" width="10px"></a>
+                </div>
+            </div>
+            
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <!-- left-sidebar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="img/news.png">Latest News</a>
+                <a href="#"><img src="img/friends.png">Friends</a>
+                <a href="#"><img src="img/group.png">Groups</a>
+                <a href="#"><img src="img/marketplace.png">Marketplace</a>
+                <a href="#"><img src="img/watch.png">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="img/shortcut-1.png"> Web Developers</a>
+                <a href="#"><img src="img/shortcut-2.png"> Web Design course</a>
+                <a href="#"><img src="img/shortcut-3.png"> Full Stack Developers</a>
+                <a href="#"><img src="img/shortcut-4.png"> Website Experts</a>
+            </div>
+        </div>
+        <!-- main-sidebar -->
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="img/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="img/member-1.png">
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="img/member-2.png">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story4">
+                    <img src="img/member-3.png">
+                    <p>Samona</p>
+                </div>
+                <div class="story story5">
+                    <img src="img/member-4.png">
+                    <p>Doe</p>
+                </div>     
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="img/profile-pic.png">
+                    <div>
+                        <p>Gabriel Salazar</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="what's on your mind, John"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="img/live-video.png"> Live Video</a>
+                        <a href="#"><img src="img/photo.png"> Photo/Video</a>
+                        <a href="#"><img src="img/feeling.png"> Feeling/Activity</a>
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Gabriel Salazar</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">New video on my youtube channel <span>@Gabriel</span>! <a href="#">#YoutubeVideo</a> <a href="#">#YoutubeChannel</a></p>
+                <img class="post-img" src="img/feed-image-1.png">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png">560</div>
+                        <div><img src="img/comments.png">120</div>
+                        <div><img src="img/share.png">250</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Gabriel Salazar</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Chill with friends tonight<span></span>! <a href="#">#YoutubeVideo</a> <a href="#">#YoutubeChannel</a></p>
+                <img class="post-img" src="img/feed-image-2.png">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png">820</div>
+                        <div><img src="img/comments.png">56</div>
+                        <div><img src="img/share.png">187</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Gabriel Salazar</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">It's good to walk with those with whom the soul rejoices<span></span>! <a href="#">#YoutubeVideo</a> <a href="#">#YoutubeChannel</a></p>
+                <img class="post-img" src="img/feed-image-3.png">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png">707</div>
+                        <div><img src="img/comments.png">87</div>
+                        <div><img src="img/share.png">300</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Gabriel Salazar</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Sometimes it's good to work from home<span></span>! <a href="#">#YoutubeVideo</a> <a href="#">#YoutubeChannel</a></p>
+                <img class="post-img" src="img/feed-image-4.png">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png">680</div>
+                        <div><img src="img/comments.png">42</div>
+                        <div><img src="img/share.png">87</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Gabriel Salazar</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Meeting with colleagues, solving business issues<span></span>! <a href="#">#YoutubeVideo</a> <a href="#">#YoutubeChannel</a></p>
+                <img class="post-img" src="img/feed-image-5.png">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png">543</div>
+                        <div><img src="img/comments.png">50</div>
+                        <div><img src="img/share.png">187</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="load-more-btn" type="button">Load More</button>
+        
+        </div>
+        <!-- right-sidebar -->
+        <div class="right-sidebar">
+            
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+            
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Willson Tech Pack</p>
+                    <a href="#">More Info</a>
+                </div>           
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+            
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Willson Tech Pack</p>
+                    <a href="#">More Info</a>
+                </div>           
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Adverstiment</h4>
+                <a href="#">Close</a>
+            </div>
+            <img class="sidebar-ads" src="img/advertisement.png">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/member-1.png">
+                </div>
+                <p>Mina Alison</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/member-2.png">
+                </div>
+                <p>Aston Jackson</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/member-3.png">
+                </div>
+                <p>Rose Samone<p>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Copyright 2022 - Kami0code</p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
